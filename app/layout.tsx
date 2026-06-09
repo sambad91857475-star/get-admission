@@ -1,16 +1,19 @@
-import React from 'react';
+import React from "react";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+
 export const metadata = {
-  title: "GET ADMISSION - Études en France",
-  description: "Obtenir votre admission à l’étranger en toute sérénité.",
+  title: "Get Admission",
+  description: "Gestion des pré-inscriptions et suivi Campus France",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="fr">
       <body className="antialiased">
-        <Navbar />
         {children}
       </body>
     </html>
